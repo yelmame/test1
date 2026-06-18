@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alex<span>.Dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn-toggle">🌙 Mode</button>
+        </nav>
+    </header>
+
+    <!-- About / Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-container">
+            <!-- Profile Avatar Placeholder -->
+            <div class="profile-avatar">
+                <span class="avatar-fallback">AM</span>
+            </div>
+            <div class="hero-content">
+                <p class="greeting">Hi there, I am</p>
+                <h1>Alex Morgan</h1>
+                <h2>Frontend Developer & UI/UX Designer</h2>
+                <p class="bio">
+                    I'm a passionate creator based in San Francisco. I specialize in building responsive web applications and crafting digital experiences that are both beautiful and functionally sound. 
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">GitHub</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Development</h3>
+                <div class="tags">
+                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>React</span> <span>Git</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Design</h3>
+                <div class="tags">
+                    <span>Figma</span> <span>Adobe XD</span> <span>Wireframing</span> <span>Typography</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Interactive Filtering -->
+    <section id="projects" class="projects">
+        <h2>Featured Work</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="code">Code</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" data-category="code">
+                <div class="project-badge">Code</div>
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack online store featuring state management, a secure checkout funnel, and a customized dark mode.</p>
+            </div>
+            <div class="project-card" data-category="design">
+                <div class="project-badge">Design</div>
+                <h3>Travel App UI Concept</h3>
+                <p>A high-fidelity mobile architecture mockup built completely in Figma focusing on minimalist design rules.</p>
+            </div>
+            <div class="project-card" data-category="code">
+                <div class="project-badge">Code</div>
+                <h3>Task Management System</h3>
+                <p>A productivity dashboard built with pure drag-and-drop JavaScript functionality and local data storage persistence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's Work Together</h2>
+        <p class="contact-subtitle">Have a project in mind or just want to say hi? Drop a line!</p>
+        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thanks for reaching out! I will get back to you shortly.');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
